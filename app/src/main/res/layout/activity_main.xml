@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <data />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Magma — College Ecosystem"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnAddDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Load Demo Data"
+            app:layout_constraintTop_toBottomOf="@id/tvSummary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <GridLayout
+            android:id="@+id/gridFeatures"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:columnCount="2"
+            android:rowCount="5"
+            app:layout_constraintTop_toBottomOf="@id/btnAddDemo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnForums"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Forums" />
+
+            <Button
+                android:id="@+id/btnStore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Store" />
+
+            <Button
+                android:id="@+id/btnAppStore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="App Store" />
+
+            <Button
+                android:id="@+id/btnVideos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Videos" />
+
+            <Button
+                android:id="@+id/btnJobs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Jobs" />
+
+            <Button
+                android:id="@+id/btnEvents"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Events" />
+
+            <Button
+                android:id="@+id/btnLibrary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="E-Library" />
+
+            <Button
+                android:id="@+id/btnMentorship"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Mentorship" />
+
+            <Button
+                android:id="@+id/btnInternships"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Internships" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Profile" />
+
+        </GridLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

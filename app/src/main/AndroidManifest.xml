@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magma.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MagmaApp"
+        android:allowBackup="true"
+        android:label="Magma"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- AdMob App ID: replace the value with your AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy" />
+        <activity android:name="com.magma.app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Feature screens -->
+        <activity android:name="com.magma.app.features.ForumsActivity" />
+        <activity android:name="com.magma.app.features.StoreActivity" />
+        <activity android:name="com.magma.app.features.AppStoreActivity" />
+        <activity android:name="com.magma.app.features.VideosActivity" />
+        <activity android:name="com.magma.app.features.JobsActivity" />
+        <activity android:name="com.magma.app.features.EventsActivity" />
+        <activity android:name="com.magma.app.features.LibraryActivity" />
+        <activity android:name="com.magma.app.features.MentorshipActivity" />
+        <activity android:name="com.magma.app.features.InternshipActivity" />
+        <activity android:name="com.magma.app.features.ProfileActivity" />
+        <activity android:name="com.magma.app.auth.LoginActivity" />
+        <activity android:name="com.magma.app.auth.RegisterActivity" />
+    </application>
+
+</manifest>
